@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+  <title>Contact Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+  
+  span {
+    color: #ffffff;
+    margin-left: 10px;
+  
+  }
+
+
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+  }
+
+  .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+
+  }
+
+  .sidenav a:hover {
+  color: #800080;
+      
+  }
+  .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+
+  }
+
+  #main {
+  transition: margin-left .5s;
+  padding: 0px;
+  background-color: #4B0082;
+
+  }
+
+  @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+  }
+
+  body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+  color: #000000;
+  background-size: 100% 100%;
+  }
+
+  p {font-size: 16px;}
+
+  .margin {margin-bottom: 95px;}
+
+  .contact-page { 
+  background-color: #4B0082;
+  background-size: 100% 100%;
+  padding-top: 20px;
+  padding-bottom: 24px;
+
+  }
+
+  h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+   
+  }
+
+  h4 {
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .container-fluid {
+  padding-top: 10px;
+  padding-bottom: 0px;
+
+  }
+
+  .container {
+  padding-top: 10px;
+  padding-bottom: 0px;
+
+  }
+
+/* Start of  Contact Box CSS*/
+
+
+.contact-me {
+max-width:400px;
+width:100%;
+margin: auto;
+opacity: 0.7;
+
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background: #000000;
+	padding:25px;
+	margin:50px 0;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background: #4B0082;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#4B0082;
+}
+
+/*Links to External Social Accounts*/
+
+.social {
+  margin: auto;
+  color: #ffffff;
+
+}
+
+/* End of External Social Accounts*/
+/* End of Contact Box CSS*/
+
+/* Start of Footer */
+
+footer {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* End of Footer */
+
+</style>
+
+<!-- Start of javascript -->
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
+
+<!-- End of javascript -->
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+        <a href="portfolio.html"><span class="glyphicon glyphicon-user"></span> Portfolio</a>
+        <a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a>
+      </div>
+
+      <div id="main">
+
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<!-- =========================================================All Content Starts In Here====================================================================================== -->
+
+<!-- Start of Contact Box -->
+
+<div class="contact-page">
+
+  <div class="contact-me">  
+      <form id="contact" action="" method="post">
+        <h3>Contact me</h3>
+        <h4>If you would like to work with me send me a message</h4>
+        <fieldset>
+          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Email Address" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+        
+          <div class="social">
+              <a href="https://www.facebook.com/dorianinc" class="fa fa-facebook"></a>
+              <a href="https://www.linkedin.com/in/dorian-macias-491b5499" class="fa fa-linkedin"></a>
+              <a href="https://github.com/dorianinc" class="fa fa-github"></a>
+          </div>
+      </form>
+               
+    </div>
+</div>
+
+<!-- End of Contact Box -->
+
+<!-- Start of footer -->
+
+<footer class="container-fluid bg-4 text-center">
+  <p>&#169; Copyright 2018 Dorian Macias</p> 
+</footer>
+
+<!-- End of footer -->
+
+</div>
+
+<!-- =========================================================All Content Ends In Here========================================================================================= -->
+
+</body>
+</html>
