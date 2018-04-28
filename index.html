@@ -1,246 +1,314 @@
-<!DOCTYPE HTML>
-
 <html lang="en">
+
 <head>
-  <title>About Me Page</title>
-  <meta charset="utf-8">
+  <title>Dorian Inc's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Required Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- BootStrap 3 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- Font Awesome Fonts -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+    crossorigin="anonymous"></script>
+  <!-- Reset and Style CSS -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/skillset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<style>
-
- /* Start of Navbar */
-
-  span {
-    color: #ffffff;
-    margin-left: 10px;
-  }
-
-   span:hover {
-    color: #800080
-  }
-
-  .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #000000;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-
-  }
-
-  .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #ffffff;
-  display: block;
-  transition: 0.3s;
-
-  }
-
-  .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-
-  }
-  .sidenav a:hover {
-  color: #800080;
-      
-  }
- 
-  @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-
-  }
- 
-/* End of Navbar */
-
-/* Start of Main Content */
-
-  #main {
-  transition: margin-left .5s;
-  padding: 0px;
-  background-color: #000000;
-
-  }
-
-  body {
-  font: 20px Montserrat, sans-serif;
-  line-height: 1.8;
-  color: #f5f6f7;
-
-  }
-
-  p {
-    font-size: 100%;
-    text-indent: 5%;
-    }
-
-  .margin {margin-bottom: 95px;}
-
-  .jumbotron { 
-  background-image: url("assets/images/galaxy.jpg");
-  background-size: 100% 100%;
-  color: #ffffff;
-  padding-top: 264px;
-  padding-bottom: 350px;
-
-  }
-
-  .box {
-    width: 50%;
-    border: 5px solid white;
-    padding: 5px;
-    margin: auto;
-    font-weight: bold;
-    font-family: 'Raleway', sans-serif;
-  }
-
-  .bg-1 { 
-  background: linear-gradient(black, white);
-
-  }
-
-  .bg-2 { 
-  background-color: #ffffff; 
-  color: #000000;
-
-  }
-
-  h2 {
-    font-size: 30px;
-    text-decoration: overline underline;
-    text-align: center;
-   
-  }
-
-  .container-fluid {
-  padding-top: 10px;
-  padding-bottom: 100px;
-
-  }
-
-  .container {
-  padding-top: 10px;
-  padding-bottom: 0px;
-
-  }
-
-
-  .img-circle {
-  border-radius: 50%;
-
-  }
-
-/* End of Main Content*/
-
-</style>
-
-
-<!-- Start of javascript -->
-
-<script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-    }
-    
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
-    }
-</script>
-
-<!-- End of javascript -->
 
 <body>
+  <!--Navigation-->
+  <nav class="navbar navbar-inverse  navbar-fixed-top">
 
-<!-- Start of  Sidebar Specific -->
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
-        <a href="portfolio.html"><span class="glyphicon glyphicon-user"></span> Portfolio</a>
-        <a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a>
-    </div>
-
-<!-- End of Sidebar Specific -->
-
-<!-- =========================================================All Content Starts In Here====================================================================================== -->
-      
-  <div id="main">
-
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-
-<!-- Start of Jumbotron Containing Header and Banner -->
-
-  <div class="jumbotron">
-    <div class="container text-center">
-      <div class="box">
-        <h1>Dorian Macias</h1>      
-        <p>Up And Coming Full Stack Web Developer</p>
-      </div>
-    </div>
-  </div>  
-
-<!-- End of Jumbotron -->
-  
-<!-- Start of Empty Div Containing Black To White Gradient -->
-
-      <div class="container-fluid bg-1 text-center">    
-      </div>
-
-<!-- End of Empty Div Containing Black To White Gradient -->
-
-<!-- Start of Div Containing My Picture and Info on Myself -->
-
-      <div class="container-fluid bg-2">    
-          <h2 class="margin">A little bit about me</h2><br>
-        <div class="row">
-
-          <div class="col-md-8"> 
-            <p>Growing up I've always had a passion for seeing how things work and a crazy desire to build and create. Channeling that into Full stack web development was an easy transition considering into computers I am.
-              I'll be a strong a to any team that I'm put into with the skillset I've developed in the past and will continue to develop well into the future of my career. 
-            </p>
-          </div>
-          <div class="col-sm-4"> 
-
-            <img src="assets/images/me.jpg" alt="Placeholder" class="img-circle" style="width:360px; height:360px;">
-
-          </div>
+    <div class="conatiner-fluid">
+      <!--page scroll button for -->
+      <div class="navbar-header" role="navigation">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div>
+          <img id="logo" src="assets/images/logoinvert.png">
         </div>
       </div>
+      <!--page scroll button-->
 
-<!-- End of Div Containing My Picture and Info on Myself -->
-      
-<!-- Start of Footer -->
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
 
-      <footer class="container bg-3 text-center">
-        <p>&#169; Copyright 2018 Dorian Macias</p> 
-      </footer>
+          <ul class="nav navbar-nav navbar-left">
+            <li>
+              <a href="#jumbotron-content">Home</a>
+            </li>
+            <li>
+              <a href="#about-content">About</a>
+            </li>
+            <li>
+              <a href="#mywork-content">My Work</a>
+            </li>
+            <li>
+              <a href="#contact-content">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!--ul-li-->
+      </div>
+      <!--navbar collapse-->
+    </div>
+    <!--container-fluid-->
+  </nav>
+  <!--Navigation-->
 
-<!-- End of Footer -->
+  <!--Header-->
+  <div class="jumbotron" id="jumbotron-content">
+    <div class="container-fluid">
+      <div class="col-lg-5">
+        <div id="canvas">
+          <canvas id="constellation"></canvas>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="row">
+          <div class="jumbo-box">
+            <h1 id="intro">Hello I'm
+              <span id="name">Dorian Macias</span>
+            </h1>
+            <h1 id="intro">I'm a full-stack web developer</h1>
+          </div>
 
-</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid about-content" id="about-content">
+    <div class="row">
+      <div class="about">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+          <h1 id="about">About Me</h1>
+        </div>
+        <div class="col-lg-4"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="about-me">
+          <img id="me" src="assets/images/me.jpg">
+          <p class="text">If you’re looking for a creative, hardworking and easy-going full-stack web developer look no further. My current
+            skill set consist of languages such as HTML, CSS, Javascript, and JQuery, Node as well as some PhotoShop and
+            Dreamweaver and am always looking to expand in order to make a better web page. In my past work I’ve rallied
+            teams together in tough situations and excelled in each and every one of them. Even looked to for advice from
+            my upper management when overseeing operations, I’m always looking for ways to make everything as efficient as
+            it can be. High pressure and a fast work paced environments are where I thrive and I give each and every task
+            I’m given my one hundred percent. My passion has and always will be looking further beyond what man has already
+            attained and pushing my own personal limits.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <!-- Start of Skillset Div -->
+        <div class="skillset">
+          <div class="skillbar clearfix " data-percent="90%">
+            <div class="skillbar-title">
+              <span>HTML5</span>
+            </div>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">90%</div>
+          </div>
+          <!-- End Skill Bar -->
 
-<!-- =========================================================All Content Ends In Here========================================================================================= -->
+          <div class="skillbar clearfix " data-percent="90%">
+            <div class="skillbar-title">
+              <span>CSS</span>
+            </div>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">90%</div>
+          </div>
+          <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="70%">
+            <div class="skillbar-title">
+              <span>javascript</span>
+            </div>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">70%</div>
+
+          </div>
+          <!-- End Skill Bar -->
+          <div class="skillbar clearfix " data-percent="80%">
+            <div class="skillbar-title">
+              <span>jQuery</span>
+            </div>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div>
+          <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="35%">
+            <div class="skillbar-title">
+              <span>Node</span>
+            </div>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">10%</div>
+          </div>
+          <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="55%">
+            <div class="skillbar-title">
+              <span>Photoshop</span>
+            </div>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent ">45%</div>
+          </div>
+          <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="35%">
+            <div class="skillbar-title">
+              <span>DreamWeaver</span>
+            </div>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent ">10%</div>
+          </div>
+          <!-- End Skill Bar -->
+
+        </div>
+      </div>
+      <!--End of SKillset Div-->
+    </div>
+    <!--End of About Me Div-->
+  </div>
+  <!--End of About Me/Skillset Div-->
+  <div class="container-fluid mywork-content" id="mywork-content">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 id="mywork-header">My Work</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="myWork">
+        <div class="col-lg-3">
+          <h3 id="work-name">Tasteful</h3>
+          <p class="text" id="languages">JavaScript/JQuery/FireBase</p>
+          <p class="text">
+            Tasteful is a food search app that provides the user with a personal and custom search for food. Tasteful matches descriptive
+            keywords of the desired food and the user’s personal food preferences creating a refined and precise search experience.
+            Instead of choosing between food suggestions based on the opinions and preferences of others, Tasteful connects
+            the user with options that appeal to their food preferences, desires, and cravings.
+          </p>
+        </div>
+        <div class="col-lg-9">
+          <img class="workimages" src="assets/images/tasteful.jpg">
+        </div>
+      </div>
+      <div class="myWork">
+        <div class="col-lg-3">
+          <h3 id="work-name">Hangman</h3>
+          <p class="text" id="languages">JavaScript/JQuery</p>
+          <p class="text">
+            A classic game we all know and love with a 2000's rock music twist. User gets 10 guesses, if within those 10 guesses the
+            user correctly guesses the word a quick 15 second track of nostalgia is played. If the User guesses incorrected
+            they are booed off stage. Tho the pressure is real to keep you're doting audience happy it is definitely worth
+            it to take a walk down memory lane.
+          </p>
+        </div>
+        <div class="col-lg-9">
+          <img class="workimages" src="assets/images/hangman.jpg">
+        </div>
+      </div>
+      <div class="myWork">
+        <div class="col-lg-3">
+          <h3 id="work-name">Movie Trivia</h3>
+          <p class="text" id="languages">JavaScript/JQuery</p>
+          <p class="text">
+            A trivia game that puts your movie knowledge to the test. You're give 30 seconds to correctly guess the answer to the given
+            question. Whether you answer correct or incorrectly, you still recieve a movie clip at the end of each question.
+            But which movie clip you recieve depends on whether you were right or not. At the end of game you're score is
+            tallied and you can either brag to all your friends about how smart you are or just watch the great movies shown
+            to you in the game!
+          </p>
+        </div>
+        <div class="col-lg-9">
+          <img class="workimages" src="assets/images/trivia.jpg">
+        </div>
+      </div>
+      <div class="myWork">
+        <div class="col-lg-3">
+          <h3 id="work-name">Train Schedule</h3>
+          <p class="text" id="languages">JavaScript/JQuery/FireBase</p>
+          <p class="text">
+            Train Schedule is an Application that enables user to input information about a train and view the information on an easy
+            to read table. The table gives you useful information such as the name of the train, the location its headed,
+            when its arriving at the station, and the frequency of said line. Information on the train is data persistant
+            so that even when the Train Scheduler is closed you're easily able to open the app back up and not worry about
+            having to re-input all the train information.
+          </p>
+        </div>
+        <div class="col-lg-9">
+          <img class="workimages" src="assets/images/traintime.jpg">
+        </div>
+      </div>
+      <button type="button" class="slider" aria-label="Left Align" onclick="plusDivs(-1)">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </button>
+      <button type="button" class="slider" aria-label="Left Align" onclick="plusDivs(1)">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div> <!-- End of Work Content Div-->
+ 
+
+  <div class="container-fluid contact-content" id="contact-content">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="contact">Contact</h1>
+        <p class="text" id="contact">Want to work together?</p>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <form method="post">
+                <fieldset>
+                  <input placeholder="Name" type="text" tabindex="1" required>
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Email" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                  <textarea placeholder="Your Message" tabindex="5" required></textarea>
+                </fieldset>                  
+                  <button name="submit" type="submit" class="contact-submit pull-right" data-submit="...Sending">Submit</button>
+                </fieldset>
+              </form>
+              <button class="my-profiles pull-left"><a class="link" href="https://github.com/dorianinc"><span class="fab fa-github-alt"></span></a></button>
+              <button class="my-profiles pull-left"><a class="link" href="https://www.linkedin.com/in/dorian-macias-491b5499"><span class="fab fa-linkedin-in"></span></a></button>
+              <button class="my-profiles pull-left"><a class="link" href="https://www.facebook.com/Dorianinc"><span class="fab fa-facebook-f"></span></a></button>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+  </div> <!-- End of Contact Content -->
+  <div class="row">
+      <div class="col-lg-12">
+        <div class="footer">
+          <p>&#169; Copyright 2018 Dorian Macias</p>
+        </div>
+      </div>
+  </div>
+  <!-- Linking Page to TweenLite and EasePack -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js "></script>
+  <!-- Linking Page to JQuery and Javascript-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js "></script>
+  <script src="assets/javascript/javascript.js "></script>
+  <script src="assets/javascript/canvas.js "></script>
 
 </body>
+
 </html>
