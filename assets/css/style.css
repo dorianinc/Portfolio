@@ -38,7 +38,6 @@ nav.navbar.transparent {
     height: 48rem;
     background-image: url("../images/theview.jpg");
     background-size: 100% 100%;
-    overflow: auto;
 }
 
 .jumbo-box {
@@ -134,7 +133,6 @@ nav.navbar.transparent {
     height: 50rem;
     background: #fff;
     background-size: 100% 100%;
-    overflow: auto;
 }
 
 .contact{
